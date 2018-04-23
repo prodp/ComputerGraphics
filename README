@@ -1,0 +1,34 @@
+PART 3
+	basic camera control :
+		fly-through mode - M - DONE
+		"fps" exploration mode
+	camera path : 
+		camera path to explore terrain, done with bezier curves
+		camera velocity control with W and S
+		bonus : 
+			physically realistic camera
+			another bezier curve to control camera velocity
+	bonus : 
+		particle system : snow particles on the CPU
+		bonus bonus :
+			particles on the GPU : particles pos. and vel. stored in a texture, integration done on gpu
+			extended part. system : clouds, rain, pollen, dust - particles interactions (flock of birds) - ...
+
+PART 2
+	bugfix : water plane is too small and covers only half of the screen on linux -> old version - FIXED
+	bugfix : redimensionning crashed grid in linux - FIXED 
+	agrandir la grille -> réduire l'amplitude de hauteur pour donner l'illusion de plus grand -> OK
+	rotation horizontale/verticale camera - M
+	vérifier le calcul des lumière
+	source de lumière qui suit le soleil de la skybox
+	bugfix : diminuer le gradient du brouillard assombrit le point au centre (qui devrait toujours rester clair, quel que soit le gradient)
+	BONUS : 
+		ponderer l'amplitude des variations du terrain par un perlin noise pour simuler differentes geometries de terrain - ~Q~ M - DONE
+		ajouter textures : bedrock / mountainside / seaside + fine-tune textures height - Q - DONE
+		écume 
+		texture : bump mapping / displacement mapping (cf lect 5)
+		fix "water reflects sky because of texture query offset" bug
+
+PART 1
+	correct FBm - Q -DONE
+	ridge multifractal - Q
